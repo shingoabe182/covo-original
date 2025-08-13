@@ -41,6 +41,7 @@ body {
 .site-section {
     padding: 80px 20px;
     text-align: center;
+    margin-bottom: 300px; /* セクション間の余白 */
 }
 
 .section-title {
@@ -54,7 +55,8 @@ body {
 --------------------------------------------------------------*/
 #concept {
     margin-top: 100vh; /* 追加 */
-    background-color: #f9f9f9; /* 背景色を少し変えるとセクションが区切られて見える */
+    background-color: rgba(249, 249, 249, 0.8); /* 背景色を少し変えるとセクションが区切られて見える */
+    border-radius: 10px; /* 角を丸くする */
 }
 
 .concept__content {
@@ -69,6 +71,56 @@ body {
 }
 
 .concept__content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/*--------------------------------------------------------------
+# Food Section
+--------------------------------------------------------------*/
+#food {
+    background-color: rgba(255, 255, 255, 0.8); /* 背景色を白に */
+}
+
+.food__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.food__content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.food__image {
+    max-width: 100%;
+    height: auto;
+    display: block; /* 中央寄せのためにブロック要素に */
+    margin: 30px auto 0; /* 上部に余白、中央寄せ */
+    border-radius: 5px; /* 角を少し丸く */
+}
+
+/*--------------------------------------------------------------
+# Stay Section
+--------------------------------------------------------------*/
+#stay {
+    background-color: rgba(249, 249, 249, 0.8); /* 背景色を少し変える */
+}
+
+.stay__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stay__content h3 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.stay__content p {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 20px;
