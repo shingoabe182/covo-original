@@ -1,0 +1,75 @@
+/* CSS for Covo Original Theme */
+
+body {
+    font-family: 'Noto Serif JP', serif;
+}
+
+#hero {
+    /* position: relative; */ /* 削除 */
+    width: 100%;
+    height: 100vh; /* 画面の高さいっぱいに表示 */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__video-wrapper {
+    position: fixed; /* fixed に変更 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* コンテンツの背後に配置 */
+}
+
+.hero__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* アスペクト比を維持したまま全画面をカバー */
+}
+
+.hero__content {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+.site-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+/*--------------------------------------------------------------
+# Concept Section
+--------------------------------------------------------------*/
+#concept {
+    margin-top: 100vh; /* 追加 */
+    background-color: #f9f9f9; /* 背景色を少し変えるとセクションが区切られて見える */
+}
+
+.concept__content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.concept__catchphrase {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.concept__content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
